@@ -39,7 +39,7 @@ const VoiceTutor = () => {
     const startConversation = async () => {
         if (conversationEnded) return;  // Prevent starting new conversation after it has ended
         try {
-            const response = await axios.post('http://localhost:5000/start', { topic: selectedTopic, level: selectedLevel });
+            const response = await axios.post('https://voice-bot-backend.onrender.com/start', { topic: selectedTopic, level: selectedLevel });
             setConversation([...conversation, { role: 'assistant', content: response.data.greeting }]);
 
             // Stop listening before playing the TTS audio
@@ -75,7 +75,7 @@ const VoiceTutor = () => {
             resetTranscript();
 
             // Make API request to process user input
-            const response = await axios.post('http://localhost:5000/api/process', { input: transcript, topic: selectedTopic, level: selectedLevel });
+            const response = await axios.post('https://voice-bot-backend.onrender.com/api/process', { input: transcript, topic: selectedTopic, level: selectedLevel });
 
             // Update the conversation with AI response (before TTS)
             setConversation((prevConversation) => [
