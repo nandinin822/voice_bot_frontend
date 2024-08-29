@@ -1,0 +1,92 @@
+/* VoiceTutor.css */
+.voice-tutor-container {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+.blue-head{
+    color: #2867EC;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 1em;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.option-button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    flex-grow: 1;
+}
+
+select {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.start-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.conversation-container {
+    margin-top: 1em;
+    text-align: left;
+    max-height: 300px;
+    overflow-y: auto;
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.listen-button, .process-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
